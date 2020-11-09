@@ -128,7 +128,7 @@ ann.fit(X_train, y_train, batch_size = 32, epochs = 100)
 
 # Predicting the Test set results
 y_pred = ann.predict(X_test)
-# Changing result into binary
+# Changing result into boolean
 y_pred = (y_pred > 0.5)
 # print(np.concatenate((y_pred.reshape(len(y_pred),1), y_test.reshape(len(y_test),1)),1))
 
